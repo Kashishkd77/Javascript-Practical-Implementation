@@ -1,0 +1,22 @@
+//Write a JavaScript program to compute the power of a number using recursion.
+<html>
+<body>
+	<script>
+		function power(x,n)
+		{	
+			if(n==0)
+				return 1;
+			else if(n==1)
+				return x;
+			return x*power(x,n-1);
+		}
+		function input()
+		{
+			a=parseInt(prompt("ENTER THE NO."));
+			b=parseInt(prompt("ENTER ITS POWER"));	
+			document.write("ANSWER IS : "+power(a,b));
+		}
+	</script>
+	<input type=button value=GET_INPUT onclick="input()"><br>
+</body>
+</html>

@@ -1,0 +1,19 @@
+//WRITE JAVASCRIPT PROGRAMS FOR FINDING A DISCOUNT ON PURCHASE(if purchase is greater than 1000 Rs,discount is 10% otherwise no discount). 
+<html>
+<body>
+	<script>
+		var p=parseInt(prompt("Enter the purchase rate"));
+		if(p>1000)
+ 		{
+			var dis=(p/100)*10;
+			var a=p-dis;
+			document.write("<br/><br/>","Your purchase rate is higher than 1000.so,we are giving you discount of 10% <br/>" );
+			document.write("You have to pay now=" +a);
+ 		}
+		else
+ 		{
+			document.write("<br/><br/>","Your purchase rate is less than 1000. So,there is no discount " );
+ 		}
+	</script>
+</body>
+</html>

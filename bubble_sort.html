@@ -1,0 +1,27 @@
+//Write a JavaScript program to arrange element into a given list in ascending order using bubble sort.
+<html>
+<body>
+	<script>
+		var arr=new Array(101,40,6,98,10);
+		document.write("<br/>Elements of array are:");
+		for(i=0;i<arr.length;i++)
+			document.write(arr[i]+" ");
+		for(i=0;i<arr.length;i++)
+		{
+			for(j=0;j<arr.length;j++)
+			{
+				if(arr[j]>arr[j+1])
+				{
+					temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+				}
+			}
+		}
+		document.write("<br/>Elements of array after sorting are:");
+		for(i=0;i<arr.length;i++)
+			document.write(arr[i]+" ");
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+//Write a JavaScript program to calculate net salary of an employee using object. Employee object consist of properties as EmpId, EmpName, HRA, DA,PF,Basic_Sal, Net_Sal and Methods to calculate netsalary of an employee.
+<html>
+<head>
+	<script>
+		function emp_details()
+		{
+			document.getElementById("salary").style.backgroundColor="white";
+			function Employee(empid,empname,hra,da,pf,basic_sal)
+			{
+				this.empid=empid;
+				this.empname=empname;
+				this.hra=hra;
+				this.da=da;
+				this.pf=pf;
+				this.basic_sal=basic_sal;
+				this.cal_sal = function cal_sal()
+				{
+					net_sal=hra+da+pf+basic_sal;												
+					return net_sal;
+				}
+			}					
+			var empid=document.getElementById("empid").value;
+			var empname=document.getElementById("empname").value;
+			var hra=parseInt(document.getElementById("hra").value);
+			var da=parseInt(document.getElementById("da").value);
+			var pf=parseInt(document.getElementById("pf").value);
+			var basic_sal=parseInt(document.getElementById("basic_sal").value);
+			e=new Employee(empid,empname,hra,da,pf,basic_sal);
+			document.getElementById("salary").value=e.cal_sal();
+		}
+	</script>
+</head>
+<body>
+	<br><br>
+	Enter EMPLOYEE ID : <input type=number id=empid><br><br>
+	Enter EMPLOYEE NAME : <input type=text id=empname><br><br>
+	Enter HRA : <input type=number id=hra><br><br>
+	Enter DA : <input type=number id=da><br><br>
+	Enter PF : <input type=number id=pf><br><br>
+	Enter BASIC SALARY : <input type=number id=basic_sal><br><br>
+	<input type=button value="GET_INFO" onclick=emp_details()><br>
+	NET SALARY IS : <input type=text id=salary><br><br>
+</body>
+</html> 

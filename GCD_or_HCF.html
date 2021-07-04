@@ -1,0 +1,20 @@
+//WRITE JAVASCRIPT PROGRAM TO FIND THE GREATEST COMMON DIVISOR/HCF OF 2 NOS.
+<html>
+<body>
+	<script type="text/javascript">
+		var x,y,r;
+		x=parseInt(prompt("ENTER THE FIRST NO."));
+		y=parseInt(prompt("ENTER THE SECOND NO."));
+		x1=x;
+		y1=y;
+		r=x%y;
+		while(r!=0)
+		{
+			x=y;
+			y=r;
+			r=x%y;
+		}
+		document.write("<br/><br/>"+y+" IS THE HIGHEST COMMON FACTOR OF "+x1+" AND "+y1);
+	</script>
+</body>
+</html>

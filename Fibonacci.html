@@ -1,0 +1,19 @@
+//WRITE JAVASCRIPT PROGRAM TO PRINT FIBONACCI SERIES .
+<html>
+<body>
+	<script type="text/javascript">
+		var a=0,b=1,c;
+		n=parseInt(prompt("ENTER THE RANGE"));
+		document.write("<br/><br/>"+a+" "+b+" ");
+		var i=1;
+		while(i<n-1)
+		{
+			c=a+b;
+			a=b;
+			b=c;
+			document.write(c+" ");
+			i++;
+		}
+	</script>
+</body>
+</html>

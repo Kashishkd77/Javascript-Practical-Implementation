@@ -1,0 +1,29 @@
+//Write a JavaScript program to insert an element into an array
+<html>
+	<body>
+		<script>
+			var a=new Array(1,2,4,5);
+			var loc=3;
+			var val=3;
+			document.write("<br>Elements are:");
+			for(i=0;i<a.length;i++)
+				document.write(a[i]+" ");
+			document.write("<br>Value that has to be inserted:"+val+"<br>");
+			document.write("Location where has to be inserted:"+loc+"<br>");
+			loc=loc-1;
+			if(loc<=a.length)
+			{
+				i=a.length;
+				while(loc<i)
+				{
+					a[i]=a[i-1];
+					i--;	
+				}
+				a[loc]=val;
+			}
+			document.write("After Insertion Elements are:");
+			for(i=0;i<a.length;i++)
+				document.write(a[i]+" ");
+		</script>
+	</body>
+</html>

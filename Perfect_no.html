@@ -1,0 +1,27 @@
+//WRITE JAVASCRIPT PROGRAM TO CHECK THE NUMBER IS PERFECT OR NOT .
+<html>
+<body>
+	<script type="text/javascript">
+		var a,sum=0;
+		a=parseInt(prompt("ENTER THE NO."));
+		var i=1;
+		b=a;
+		while(i<b)
+		{
+			if (b%i==0)
+			{
+				sum=sum+i;
+			}
+			i++;
+		}
+		if (sum==a)
+		{	
+			document.write("<br/><br/>"+a+" IS PERFECT");
+		}
+		else if (sum!=a)
+		{
+			document.write("<br/><br/>"+a+" IS NOT PERFECT");
+		}
+	</script>
+</body>
+</html>

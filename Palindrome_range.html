@@ -1,0 +1,29 @@
+//WRITE JAVASCRIPT PROGRAM TO CHECK THE NUMBER IS PALINDROME OR NOT IN A RANGE .
+<html>
+<body>
+	<script type="text/javascript">var n,a,b,r,rev;
+		n=parseInt(prompt("ENTER THE NO. OF TERMS"));
+		var i=1;
+		while(i<=n)
+		{
+			a=parseInt(prompt("ENTER THE NO. IN A RANGE"));
+			b=a;
+			rev=0;
+			while(b>0)
+			{
+				r=b%10;
+				rev=rev*10+r;
+				b=parseInt(b/10);
+			}
+			if (a==rev)
+			{
+			document.write(a+" IS PALINDROME ");}
+			else if (a!=rev)
+			{
+				document.write(a+" IS NOT PALINDROME");
+			}
+			i=i+1;
+		}
+	</script>
+</body>
+</html>

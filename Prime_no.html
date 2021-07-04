@@ -1,0 +1,24 @@
+//WRITE JAVASCRIPT PROGRAM TO CHECK THE NUMBER IS PRIME OR NOT .
+<html>
+<body>
+	<script type="text/javascript">
+		var a,count=0;
+		a=parseInt(prompt("ENTER THE NO."));
+		var i=2;
+		while(i<a/2)
+		{
+			if (a%i==0)
+			{
+				document.write(a+" IS NOT PRIME i.e.COMPOSITE ");
+				count=1;
+				break;
+			}
+			i++;
+		}
+		if (count==0)
+		{
+			document.write("<br/><br/>"+a+" IS PRIME");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script>
+			function sinfo()
+			{
+				document.getElementById("gr").style.backgroundColor="white";
+				function Student(rl,n,marks)
+				{
+					this.rl=rl;
+					this.n=n;
+					this.m1=m1;
+					this.m2=m2;
+					this.m3=m3;
+					this.total=0;
+					this.per=0.0;
+					this.grade='';
+					this.calper=calper;
+					this.calgrade=calgrade;
+					function calper()
+					{
+						total=m1+m2+m3;
+						per=total/3;
+						return per;
+					}
+					function calgrade()
+					{
+						if(per>90)
+							grade='A';
+						else if(per>75)
+							grade='B';
+						else if(per>60)
+							grade='C';
+						else if(per>40)
+							grade='D';
+						else if(per>30)
+							grade='E';
+						else
+							grade='F';
+						return grade;
+					}
+				}
+						
+				var rl = document.getElementById("rl").value;
+				var n = document.getElementById("n").value;
+				var marks = [
+					{m1 : parseInt(document.getElementById("m1").value)},
+					{m2 : parseInt(document.getElementById("m2").value)},
+					{m3 : parseInt(document.getElementById("m3").value)},
+				];
+				st=new Student(rl,n,marks);
+				document.getElementById("per").value=st.calper();
+				document.getElementById("gr").value=st.calgrade();
+				if(st.calgrade()=='F')
+					document.getElementById("gr").style.backgroundColor="red";
+			}
+		</script>
+	</head>
+	<body>
+		Enter RollNo : <input type=number id=rl><br><br>
+		Enter Name : <input type=text id=n><br><br>
+		Enter Marks : <input type=number id=m1><br><br>
+		
+		<input type=button value="getinfo" onclick=sinfo()><br>
+		Percentage : <input type=text id=per><br><br>
+		Grade : <input type=text id=gr><br><br>
+	</body>
+ </html> 

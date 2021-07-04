@@ -1,0 +1,23 @@
+//Write a JavaScript function that reverse a number.
+<html>
+<head>
+<script type="text/javascript">
+	function reverse()
+	{
+		var rev=0,r;
+		var b = Number(document.getElementById("no_input").value)
+		while(b>0)
+		{
+			r=b%10;
+			rev=rev*10+r;
+			b=parseInt(b/10);
+		}
+		document.write("<br/><br/>","REVERSE OF NO. IS :"+rev);
+	}	
+	</script>
+</head>
+<body>
+	Enter any Number: <input id="no_input">
+	<button onclick="reverse()">Reverse No </button></br></br>
+</body>
+</html>

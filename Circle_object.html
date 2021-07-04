@@ -1,0 +1,30 @@
+//Write a JavaScript program to get the area of a Circle using object. Circle Object must have attribute radius and method to calculate area of circle.
+<html>
+<head>
+	<script>
+		function info()
+		{
+			function Circle(r)
+			{
+				this.r=r;
+				this.area = function ()
+				{
+					ar=3.14*r*r;
+					return ar;
+				}				
+			}
+			var r=document.getElementById("r").value;
+			c=new Circle(r);
+			document.getElementById("a").value=c.area();
+		}		
+	</script>
+</head>
+<body>
+	<br><br><br>
+	ENTER RADIUS : <input type=number id=r><br><br>
+	<input type=button value="FIND AREA" onclick=info()><br><br>
+	AREA OF CIRCLE  : <input type=text id=a>
+</body>
+</html>
+
+

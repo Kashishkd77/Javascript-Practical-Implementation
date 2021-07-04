@@ -1,0 +1,21 @@
+//WRITE JAVASCRIPT PROGRAM TO CHECK THE ROOTS OF QUADRATIC EQUATIONS ARE REAL .
+<html>
+<body>
+	<script type="text/javascript">
+		var c,a,b,d;
+		//ENTER a,b and c WHERE a*x*x + b*x + c=0
+		a=parseInt(prompt("ENTER a "));
+		b=parseInt(prompt("ENTER b "));
+		c=parseInt(prompt("ENTER c "));
+		d=b*b-4*a*c;
+		if(d<0)
+		{
+			document.write("<br/><br/>","ROOTS OF GIVEN QUADRATIC EQ. IS NOT REAL");
+		}
+		else if(d>=0)
+		{
+			document.write("<br/><br/>","ROOTS OF GIVEN QUADRATIC EQ. IS REAL");
+		}
+	</script>
+</body>
+</html>

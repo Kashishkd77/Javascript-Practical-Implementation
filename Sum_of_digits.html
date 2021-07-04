@@ -1,0 +1,16 @@
+//WRITE JAVASCIPT PROGRAM TO CHECK THE SUM OF DIGITS OF A NUMBER.
+<html>
+<body>
+ 	<script>
+ 		var n=parseInt(prompt("Enter the value of n:"));
+ 		var v,sum=0;
+ 		while(n>0)
+ 		{
+ 			v =n % 10;
+			sum =sum + v;
+ 			n =n / 10; 
+		}
+ 		document.write("<br/><br/>","Sum of Digit :"+sum);
+ 	</script>
+</body>
+</html>

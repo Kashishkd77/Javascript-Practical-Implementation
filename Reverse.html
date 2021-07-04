@@ -1,0 +1,17 @@
+//WRITE JAVASCRIPT PROGRAM TO FIND THE REVERSE OF A NUMBER .
+<html>
+<body>
+	<script type="text/javascript">
+		var rev=0,r,b,a;
+		a=parseInt(prompt("ENTER A NO."));
+		b=a;
+		while(b>0)
+		{
+			r=b%10;
+			rev=rev*10+r;
+			b=parseInt(b/10);
+		}
+		document.write("<br/><br/>","REVERSE OF NO. IS :"+rev);
+	</script>
+</body>
+</html>

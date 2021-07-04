@@ -1,0 +1,25 @@
+//WRITE JAVASCRIPT PROGRAM TO CHECK THE NUMBER IS PALINDROME OR NOT.
+<html>
+<body>
+	<script type="text/javascript">
+		var n,a,b,r,rev;
+		a=parseInt(prompt("ENTER THE NO."));
+		b=a;
+		rev=0;
+		while(b>0)
+		{
+			r=b%10;
+			rev=rev*10+r;
+			b=parseInt(b/10);
+		}
+		if (a==rev)
+		{
+			document.write("<br/><br/>"+a+" IS PALINDROME ");
+		}
+		else if (a!=rev)
+		{
+			document.write("<br/><br/>"+a+" IS NOT PALINDROME");
+		}
+	</script>
+</body>
+</html>

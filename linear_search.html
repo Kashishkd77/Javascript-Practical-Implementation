@@ -1,0 +1,25 @@
+//Write a JavaScript program to search an element from an array using linear search.
+<html>
+<body>
+	<script>
+		var arr=new Array(10,45,67,98,100);
+		var flag=0,count=0;
+		document.write("Elements of array are:");
+		for(i=0;i<arr.length;i++)
+			document.write(arr[i]+" ");
+		var sn=parseInt(prompt("Enter the element to be searched : "));
+		for(i=0;i<arr.length;i++)
+		{
+			if(arr[i]==sn)
+			{
+				count=count+1;
+				flag=1;
+			}
+		}	
+		if(flag==1)
+			document.write("<br/>"+sn+" exists in the given array "+count+" times.");
+		else
+			document.write("<br/>"+sn+" does not exists in the given array");
+	</script>
+</body>
+</html>

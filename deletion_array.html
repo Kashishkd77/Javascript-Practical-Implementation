@@ -1,0 +1,38 @@
+//Write a javascript program to delete an element from an array.
+<html>
+<head>
+<script type="text/javascript">
+  var i,n,a,j,y,n1,x= new Array();
+  n=parseInt(prompt("<br/>enter number of elements for array list:"));
+  for(i=0;i<n;i++)
+  {
+    x[i]=parseInt(prompt("enter the numbers:"));
+  }
+  a=prompt("do you want to delete elements from the list? Enter yes or no :");
+  y="yes";
+  n1="no";
+  if(a == n1)
+  {
+    document.write("the given array list is:</br> ");
+    for(i=0;i<n;i++)
+   {
+      document.write(x[i]+"</br>");
+   }
+  }
+ else if(a == y)
+ {
+    j=parseInt(prompt("enter number of elements you want to delete in the array list:"));
+    document.write("the given array list is:</br> ");
+    for(i=0;i<n;i++)
+    {
+      document.write(x[i]+"</br>");
+    }
+    document.write("your updated array list is: </br>")
+    for(i=0;i<n-j;i++)
+    {
+      document.write(x[i]+"</br>");
+    }
+  }
+</script>
+</head>
+</html>

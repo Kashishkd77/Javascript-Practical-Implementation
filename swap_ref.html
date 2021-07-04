@@ -1,0 +1,23 @@
+//Write a javascript program to swap two numbers using call by reference.
+<html>
+<head>
+<script>
+var n1,n2;
+n1=parseInt(prompt("Enter first number:"));
+n2=parseInt(prompt("enter second number:"));
+function swap(n)
+{
+   var t;
+   t=n.v1;
+   n.v1=n.v2;
+   n.v2=t;
+}
+var n=new Object();
+n.v1=n1;
+n.v2=n2;
+document.write("before swapping: "+n.v1+","+n.v2+"</br>");
+swap(n);
+document.write("after swapping: "+n.v1+","+n.v2+"</br>");
+</script>
+</head>
+</html>

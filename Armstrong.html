@@ -1,0 +1,25 @@
+//WRITE JAVASCRIPT PROGRAM TO CHECK THE NUMBER IS ARMSTRONG OR NOT.
+<html>
+<body>
+	<script type="text/javascript">
+		var rev=0,r=0,b,a,sum=0;
+		a=parseInt(prompt("ENTER A NO."));
+		b=a;
+		while(b>=0)
+		{
+			r=b%10;
+			rev=r*r*r;
+			sum=sum+rev;
+			b=b/10;
+		}
+		if (a==sum)
+		{
+			document.write("<br/><br/>"+a+" IS ARMSTONG");
+		}	
+		else if (sum!=a)
+		{
+			document.write("<br/><br/>"+a+" IS NOT ARMSTONG");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+//Write a JavaScript function that checks whether a number is palindrome or not?
+<html>
+<head>
+	<script>
+	function Palindrome()
+	{
+		var n,a,b,r,rev;
+		a=parseInt(prompt("ENTER THE NO."));
+		b=a;
+		rev=0;
+		while(b>0)
+		{
+			r=b%10;
+			rev=rev*10+r;
+			b=parseInt(b/10);
+		}
+		if (a==rev)
+		{
+			document.write("<br/><br/>"+a+" IS PALINDROME ");
+		}
+		else if (a!=rev)
+		{
+			document.write("<br/><br/>"+a+" IS NOT PALINDROME");
+		}
+	
+	}
+	</script>
+</head>
+<body>
+	<br>
+	<center><button onClick="Palindrome()">CHECK</button>
+</body>
+</html>
+<html>
